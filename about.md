@@ -13,7 +13,7 @@ sitemap:
 
 I'm a 23 year old recent graduate from the University of Texas. I'm passionate about improving my programming skills and learning about society. One day I hope to contribute solutions to many of the worlds problems.
 
-Although I didn't always know what I wanted to do when I grew up (it took until my second year of college to find out). I was always obsessed with the idea of the <a href="https://en.wikipedia.org/wiki/Polymath"> renaissance man.</a> Although I have no illusion of being similar to da Vinci or Michelangelo, I believe the modern renaissance man (or woman) increases their utility by synthesizing their interests creatively. In order to be on the cutting edge, I believe you have to find a niche that interests you. This is a process once described to me as hybridization.
+Although I didn't always know what I wanted to do when I grew up (it took until my second year of college to find out). I was always obsessed with the idea of the <a href="https://en.wikipedia.org/wiki/Polymath"> renaissance man.</a> Although I have no illusion of being similar to da Vinci or Michelangelo, I believe the modern renaissance man (or woman) increases their utility by synthesizing their interests creatively. In order to be on the cutting edge, I believed I needed to find a niche that interested me. This is a process once described to me as hybridization, and it's why I chose to study what I did.
 
 ### Hybridization
 <div class="box">
@@ -24,13 +24,13 @@ Although I didn't always know what I wanted to do when I grew up (it took until 
 
   <p>An interesting example of the differences in hemispheric specialization involves dyslexia. There's a significant statistical correlation between dyslexia and being a millionaire. <a href = "http://www.ldonline.org/article/5665/"> A 2003 study found that of 300 millionaires who participated, over 40% were dyslexic.</a> Compare this to the estimated 5-10% of the average population who has dyslexia. This is not to say that if you have dyslexia, you will become a millionaire, but one proposed reason for this phenomenon involves the dyslexics' struggle with L-Directed thinking. Due to this struggle, they often are forced to compensate by <a href="https://blog.dyslexia.com/research-right-brain-strategies/">gaining extra strong R-directed capabilities</a>. These R-directed capabilities are often neglected in conventional education, meaning the dyslexic millionaires had created an advantage in R-directed capabilities because of their initial setback.</p>
   
-  <p>In teaching or learning, it's important to be cognizant of the way in which you are employing your mental faculties. Hybridization, or more specifically, the synergy of both a logical interest and a creative interest, provides a means of simultaneously strengthening each hemisphere of the brain.
+  <p>therefore, in teaching or learning, it's important to be cognizant of the way in which you are employing your mental faculties. Hybridization, or more specifically, the synergy of both a logical interest and a creative interest, provides a means of simultaneously strengthening each hemisphere of the brain.
   </p>
 </div>
 
 <span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
 
-<p>Not only does hybridization train your brain more effectively, it theoretically differentiates you from your peers in the job market. Statistically speaking, it's unlikely you are ever going to be the best at what you do. By taking a more general approach, you are increasing your utility in a unique way and reducing the number of peers you'll compete with, <a href="https://en.wikipedia.org/wiki/Blue_Ocean_Strategy">basically employing a blue ocean shift</a> <b>but for your skills</b>. Alternatively, going too general will decrease your utility, as being a master of none will inevitably make you unskilled.</p>
+<p>Not only does hybridization train your brain more effectively, in my opinion it theoretically differentiates you from your peers in the job market. Statistically speaking, it's unlikely anyone is ever going to be the best at what they do. By taking a more general approach, you are increasing your utility in a unique way and reducing the number of peers you'll compete with by shrinking the number of people who have the same skills as you, <a href="https://en.wikipedia.org/wiki/Blue_Ocean_Strategy">basically employing a blue ocean shift</a> <b>but for skillsets</b>. Alternatively, going too general will decrease your utility, as being a master of none will inevitably make you unskilled.</p>
 
 <p>Although I genuinely enjoy both sociology and computer science, the theory of hybridization provided me with a functional justification for pursuing both interests. I hope, by diversifying in this way, I'll have better exposure in an ultra-competitive job market, and focus on unique topics not often pursued in either discipline.</p>
 
