@@ -4,7 +4,7 @@ bio:                'Jekyll'
 description:        "Jekyll"
 locale:             en_US
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://chigg.github.io/" # the base hostname & protocol for your site
+url: "https://chigg.github.io" # the base hostname & protocol for your site
 
 defaults:
 - scope:
