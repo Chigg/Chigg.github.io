@@ -3,9 +3,9 @@ layout: null
 title: Colin - Home
 description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
 sitemap:
-    priority: 1.0
-    lastmod: 2018-5-02
-    changefreq: weekly
+	priority: 1.0
+	lastmod: 2018-5-02
+	changefreq: weekly
 ---
 <!DOCTYPE HTML>
 <!--
@@ -16,9 +16,17 @@ sitemap:
 -->
 <html>
 	<head>
-    {% include head.html %}
-    {% include tracking.html %}
-    
+	{% include head.html %}
+	<!--{% include tracking.html %}-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75662959-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-75662959-2');
+	</script>
 	</head>
 	<body class="is-loading">
 
@@ -27,7 +35,7 @@ sitemap:
 
 				<!-- Intro -->
 					<div id="intro">
-            <h1>{{site.title}}</h1>
+			<h1>{{site.title}}</h1>
 						<!--<h2>Colin Higgins</h2>
 						<p>This blog is hosted on <a href="https://github.com/Chigg">my github</a> to show off some of the cool projects I've been working on.</p>-->
 						<p></p>
@@ -45,13 +53,13 @@ sitemap:
 				<!-- Nav -->
 					<nav id="nav">
 
-            {% include nav.html %}
+			{% include nav.html %}
 
 						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+			  <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+			  <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+			  <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+			  <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -62,13 +70,13 @@ sitemap:
 								<header class="major">
 									<h2><a href="#">Colin Higgins's personal blog</a></h2>
 									<p>I've made this website to show off some of the neat things I've been up to. <br />
-                    Expect apolitical assessement of interesting journal articles, simple code tutorials, and personal projects.</p>
+					Expect apolitical assessement of interesting journal articles, simple code tutorials, and personal projects.</p>
 								</header>
 								<a href="#" class="image main"><img src="{{ "/images/pic01.jpg" | absolute_url }}" alt="" /></a>
-                				<p>
-                					<a href="https://en.wikipedia.org/wiki/Sociology">Sociology</a> and <a href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a> may seem like widely different topics that don't have much in common... but they intersect in very topical and interesting ways. Consider the apps you use and the websites you visit. How much of an effect do these tools have on your life, even inadvertly? Although typically thought of as a way to generate ad revenue, imagine the societal insights we could generate using data about usage patterns and demographs! I'm incredibly passionate about both fields, and I'd love to share that passion with you.</p>
-                				<p>
-                					I believe the intersection of Sociology and Computer Science has a massively topical importance in our society. Through the projects I'll contribute to this blog, I intend to help substantiate that claim and hopefully garner a similar passion in you, the reader.</p>
+								<p>
+									<a href="https://en.wikipedia.org/wiki/Sociology">Sociology</a> and <a href="https://en.wikipedia.org/wiki/Computer_science">Computer Science</a> may seem like widely different topics that don't have much in common... but they intersect in very topical and interesting ways. Consider the apps you use and the websites you visit. How much of an effect do these tools have on your life, even inadvertly? Although typically thought of as a way to generate ad revenue, imagine the societal insights we could generate using data about usage patterns and demographs! I'm incredibly passionate about both fields, and I'd love to share that passion with you.</p>
+								<p>
+									I believe the intersection of Sociology and Computer Science has a massively topical importance in our society. Through the projects I'll contribute to this blog, I intend to help substantiate that claim and hopefully garner a similar passion in you, the reader.</p>
 								<p>
 									To stay up to date on my contributions, please sign up for the email list below. I don't have a regularly planned schedule for updates, so they'll come infrequently. I promise not to share your details or spam you with emails.
 								 </p>
@@ -77,48 +85,48 @@ sitemap:
 
 						<!-- Posts -->
 							<section class="posts">
-                {% for post in site.posts limit:3 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-  								<article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-  									<header>
-  										<h2><a href="#">Sponsored</a></h2>
-  									</header>
+				{% for post in site.posts limit:3 %}
+				{% assign mod3 = forloop.index | modulo: 3 %}
+								<article>
+									<header>
+										<span class="date">{{ post.date | date_to_string }}</span>
+										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+									</header>
+									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+									<p>{{ post.excerpt }}</p>
+									<ul class="actions">
+										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+									</ul>
+								</article>
+				  {% if mod3 == 0 %}
+				  <article>
+									<header>
+										<h2><a href="#">Sponsored</a></h2>
+									</header>
 
-  								</article>
-                  {% endif %}
-                {% endfor %}
+								</article>
+				  {% endif %}
+				{% endfor %}
 
 							</section>
 
 						<!-- Footer -->
 							<footer>
-                <ul class="actions">
-                  <li><a href="{{ "/about/" | absolute_url }}" class="button">About Me</a></li>
-                </ul>
+				<ul class="actions">
+				  <li><a href="{{ "/about/" | absolute_url }}" class="button">About Me</a></li>
+				</ul>
 							</footer>
 
 					</div>
 
 				<!-- Footer -->
-        {% include foot.html %}
+		{% include foot.html %}
 
 			</div>
 
 		<!-- Scripts -->
 		{% include scripts-main.html %}
-    
+	
 
 	</body>
 </html>
