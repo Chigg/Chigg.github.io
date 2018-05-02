@@ -3,6 +3,7 @@ title:              Colin Higgins
 bio:                'Jekyll'
 description:        "Jekyll"
 locale:             en_US
+safe:               true
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chigg.github.io" # the base hostname & protocol for your site
 
