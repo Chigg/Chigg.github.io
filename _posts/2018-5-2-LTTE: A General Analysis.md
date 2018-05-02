@@ -7,6 +7,7 @@ image: "/images/pic02.jpg"
 ---
 
 ## Liberation Tigers of Tamil Eelam (LTTE)
+
 #### Relationship with the NGO Sector: 
 
 The LTTE’s relationship with various NGOs during the period of its existence is rather complicated. The LTTE utilized a number of NGOs globally to gather funding through the Tamil diaspora. One specific NGO, the Tamil Rehabilitation Organization (TRO) acted to rehabilitate the areas disrupted by war and to provide relief. The TRO worked synchronously with the goals established by the LTTE’s official civil service wing, the Tamil Eelam Economic Development Organization (TEEDOR). Other organizations operating outside of Sri Lanka covertly supported the LTTE as fronts. Examples of such organizations according to the Sri Lankan government are Global Tamil Forum, Tamil Youth Organization, and the World Tamil Movement.
