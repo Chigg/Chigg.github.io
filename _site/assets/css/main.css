@@ -49,13 +49,13 @@
 	}
 
 /* Box Model */
-
-	*, *:before, *:after {
+/*
+		*, *:before, *:after {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-
+*/
 /* Grid */
 
 	.row {
@@ -3026,20 +3026,21 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+			right: 0;
+			left: 0;
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			background-size: auto,								auto,																100% auto;
-			background-position: center,								center,														top center;
-			background-repeat: repeat,								no-repeat,														repeat;
-			background-attachment: screen,								screen,														screen;
-			z-index: -1;
+			background-size: auto,								auto,														cover;
+			background-position: center,								center,													fill;
+			background-repeat: repeat,								no-repeat,													no-repeat;
+			background-attachment: scroll,								scroll,														scroll;
+			z-index: 0;
 		}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
-				background-attachment: scroll;
 				width: 100vw;
 				height: 100vh;
 			}
@@ -3075,7 +3076,7 @@
 		@media screen and (orientation: portrait) {
 
 			#wrapper > .bg {
-				background-size: auto,								auto,														auto 175%;
+				background-size: auto,								auto,														auto 175;
 			}
 
 		}
