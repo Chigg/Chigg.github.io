@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="17"
+   height="17"
+   viewBox="0 0 4.4979166 4.4979165"
+   version="1.1"
+   id="svg3822"
+   inkscape:version="0.92.3 (unknown)"
+   sodipodi:docname="linkedin-logo.svg">
+  <defs
+     id="defs3816" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.839192"
+     inkscape:cx="12.929578"
+     inkscape:cy="-3.2312946"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="958"
+     inkscape:window-height="964"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3819">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-292.50209)">
+    <g
+       id="g3"
+       transform="matrix(0.00991426,0,0,0.00991426,0.10803477,292.62768)">
+      <path
+         id="LinkedIn"
+         d="M 430.117,261.543 V 420.56 H 337.929 V 272.193 c 0,-37.271 -13.334,-62.707 -46.703,-62.707 -25.473,0 -40.632,17.142 -47.301,33.724 -2.432,5.928 -3.058,14.179 -3.058,22.477 V 420.56 h -92.219 c 0,0 1.242,-251.285 0,-277.32 h 92.21 v 39.309 c -0.187,0.294 -0.43,0.611 -0.606,0.896 h 0.606 v -0.896 c 12.251,-18.869 34.13,-45.824 83.102,-45.824 60.673,-0.001 106.157,39.636 106.157,124.818 z M 52.183,9.558 C 20.635,9.558 0,30.251 0,57.463 c 0,26.619 20.038,47.94 50.959,47.94 h 0.616 c 32.159,0 52.159,-21.317 52.159,-47.94 C 103.128,30.251 83.734,9.558 52.183,9.558 Z M 5.477,420.56 H 97.661 V 143.24 H 5.477 Z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g5"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g7"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g9"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g11"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g13"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g15"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g17"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g19"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g21"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g23"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g25"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g27"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g29"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g31"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+    <g
+       id="g33"
+       transform="matrix(0.00991426,0,0,0.00991426,104.45714,155.01666)" />
+  </g>
+</svg>
