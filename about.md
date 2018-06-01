@@ -3,12 +3,14 @@ layout: page
 title: About
 permalink: /about/
 ---
-## About Me
-I'm a 23 year old recent graduate from the University of Texas. I'm passionate about improving my programming skills and learning about society. One day I hope to contribute solutions to many of the worlds problems.
+# About Me
+I'm a 23 year old recent graduate from the University of Texas. I'm passionate about improving my programming skills and learning about the impact the technology we use daily has on our society. One day I hope to contribute solutions to many of the worlds problems, but first, I have to get the knack for blogging. 
 
+I started this blog in order to provide the important contextual background for some of my projects. Context is an important concept in sociology. It gives us the ability to interpret our data. With that said, below I've written a little about my motivations below, in order to provide my perspective for the forthcoming blog posts.
+
+## Why Sociology and Computer Science?
+	
 Although I didn't always know what I wanted to do when I grew up (it took until my second year of college to find out). I was always obsessed with the idea of the renaissance man. Although I have no illusion of being similar to da Vinci or Michelangelo, I believe the modern renaissance man (or woman) increases their utility by synthesizing their interests creatively. In order to be on the cutting edge, I believed I needed to find a niche that interested me. This is a process once described to me as hybridization, and it's why I chose to study what I did, and why I believe we should strive to be modern renaissance people.
-
-### Hybridization
 
   In 2015 I took a class with professor Larry Speck at the University of Texas in which I was introduced to the theory of hybridization. The class essentially substantiated the theory of hybridization by including a number of various social scientist's and psychologist's theories to explain the benefits of interdisciplinary studies. In essence, the brain is divided into <a href = "http://brainmadesimple.com/left-and-right-hemispheres.html"> two hemispheres</a> which handle two separate aspects of thought. The left brain handles things like discipline, logic, and convergent thinking while the right brain handles playfulness, imagination, and divergent thinking. The chief goal of learning should be to stimulate each hemisphere. While this definition may seem to assume the brain as separated, a successful person utilizes both sides of the brain. To this end, finding an interdisciplinary set of tasks that encourage both L-Directed and R-Directed thinking is optimal.
 
@@ -21,8 +23,8 @@ Although I didn't always know what I wanted to do when I grew up (it took until 
 
 <img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="left brain / right brain" style = "width:50%;height:20%;" align = "left" hspace= "10" vspace= "10" />
 
-<p>Not only does hybridization train your brain more effectively, in my opinion it theoretically differentiates you from your peers in the job market. Statistically speaking, it's unlikely anyone is ever going to be the best at what they do. By taking a more general approach, you are increasing your utility in a unique way and reducing the number of peers you'll compete with by shrinking the number of people who have the same skills as you, <a href="https://en.wikipedia.org/wiki/Blue_Ocean_Strategy">essentially employing a blue ocean shift</a> but for skillsets. Alternatively, going too general will decrease your utility, as being a master of none will inevitably make you unskilled.</p>
+Not only does hybridization train your brain more effectively, in my opinion it theoretically differentiates you from your peers in the job market. Statistically speaking, it's unlikely anyone is ever going to be the best at what they do. By taking a more general approach, you are increasing your utility in a unique way and reducing the number of peers you'll compete with by shrinking the number of people who have the same skills as you, <a href="https://en.wikipedia.org/wiki/Blue_Ocean_Strategy">essentially employing a blue ocean shift</a> but for skillsets. Alternatively, going too general will decrease your utility, as being a master of none will inevitably make you unskilled.
 
-<p>Although I genuinely enjoy both sociology and computer science, the theory of hybridization provided me with a functional justification for pursuing both interests. I hope, by diversifying in this way, I'll have better exposure in an ultra-competitive job market, and focus on unique topics not often pursued in either discipline.</p>
+Although I genuinely enjoy both sociology and computer science, the theory of hybridization provided me with a functional justification for pursuing both interests. I hope, by diversifying in this way, I'll have better exposure in an ultra-competitive job market, and focus on unique topics not often pursued in either discipline.<
 
 Now that you know why I consider this niche an important endeavor, I hope you'll have a newfound interest in the synthesis of sociology and computer science or maybe find an interesting synthesis of your own.
