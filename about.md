@@ -21,7 +21,7 @@ Although I didn't always know what I wanted to do when I grew up (it took until 
   therefore, in teaching or learning, it's important to be cognizant of the way in which you are employing your mental faculties. Hybridization, or more specifically, the synergy of both a logical interest and a creative interest, provides a means of simultaneously strengthening each hemisphere of the brain.
   
 
-<img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="left brain / right brain" style = "width:25%;height:10%;" align = "left" hspace= "10" vspace= "10" />
+<img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="left brain / right brain" style = "width:30%;height:10%;" align = "left" hspace= "10" vspace= "10" />
 
 Not only does hybridization train your brain more effectively, in my opinion it theoretically differentiates you from your peers in the job market. Statistically speaking, it's unlikely anyone is ever going to be the best at what they do. By taking a more general approach, you are increasing your utility in a unique way and reducing the number of peers you'll compete with by shrinking the number of people who have the same skills as you, <a href="https://en.wikipedia.org/wiki/Blue_Ocean_Strategy">essentially employing a blue ocean shift</a> but for skillsets. Alternatively, going too general will decrease your utility, as being a master of none will inevitably make you unskilled.
 
