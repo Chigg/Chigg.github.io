@@ -251,4 +251,6 @@ To end the function, I return both centrality_list (a list of every user's unit 
 
 The primary function of check_connectivity() is to write a row of each root and the corresponding mutual connections in each column. This is done by `writer.writerow(out_list)` after the `for node in ids:` loop is finished.
 
-This ends the code tutorial for Twitter SNA. 
+This ends the code tutorial for Twitter SNA. The finished code can be found at:
+
+https://github.com/Chigg/tweepy_followers/blob/master/tweepy_followers.py 
