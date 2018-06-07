@@ -119,15 +119,15 @@ if(rate_limit_left == 1):
             #if account privacy set to private
             #skip account and print this message
             except:
-        print("THIS USERS ACCOUNT IS HIDDEN.")
+                print("THIS USERS ACCOUNT IS HIDDEN.")
 ```
-Since we now keep track of the remaining queries we have, we can force our program to sleep whenever we approach the rate limit. If you hit the rate limit too many times, your API access can be restricted or banned. Hitting the rate limit isn't the only restriction we want to apply. This block of code insures that we also do not hit an errors. The API is only capable of accessing accounts' information whose privacy is set to public. The try / except clause makes sure that if we encounter a hidden or private account, our program skips it and continues as normal. In order to finish in a timely manner (since we are going through a rather large list of accounts) we only want to access accounts with 150 followers.
+Since we now keep track of the remaining queries we have, we can force our program to sleep whenever we approach the rate limit. If you hit the rate limit too many times, your API access can be restricted or banned. Hitting the rate limit isn't the only restriction we want to apply. This block of code insures that we also do not hit any errors. The API is only capable of accessing accounts' information whose privacy is set to public. The try / except clause makes sure that if we encounter a hidden or private account, our program skips it and continues as normal. In order to finish in a timely manner (since we are going through a rather large list of accounts) we only want to access accounts with 150 followers or less.
 
 As you can tell by the above block, there are two functions. get_followers() and check_connectivity(). This corresponds to the two main actions we outlined in the first paragraph.
 
 # Get_followers <a name="chapter4"></a>
 
-The get_followers() function will take a supplied username and return a list of followers by twitter user ID. It's a fairly small block of code with it's main purpose is to query the API. Since we limited our scope to accounts with less than 150 followers, we only need to query it once to determine whether or not it falls within our scope. Luckily, Twitter gives us 500 IDs per query.
+The get_followers() function will take a supplied username and return a list of followers by twitter user ID. It's a fairly small block of code because it's main purpose is to query the API. Since we limited our scope to accounts with less than 150 followers, we only need to query it once to determine whether or not it falls within our scope because Twitter gives us 500 IDs per query.
 
 ```python
 def get_followers(username):
@@ -158,7 +158,7 @@ def get_followers(username):
 return(ids)
 ```
 
-If we wanted to increase the scope of our project, we would only need to increase `if len(ids) >= 500:` in chunks of 500 that correspond to the number of followers we're interested in. As you can see, in this block I have the time.sleep() timer broken up into chunks of 5 minutes. You can similarly implement it like this in all of the other instances. 
+If we wanted to increase the scope of our project, we would only need to increase `if len(ids) >= 500:` in chunks of 500 that correspond to the number of followers we're interested in. As you can see, in this block I have the time.sleep() timer broken up into chunks of 5 minutes. You can similarly implement it like this in all of the other instances if that is what you prefer. If you're actively monitoring the terminal, doing such would be ideal. 
 
 This is also an artificial means of adhering to the API rate limit, but it's technically less resource intensive since we don't have to query the API every time we want to make a different query. Although Twitter doesn't rate_limit the API rate_limit_remaining checks (confusing wording, I know) it's just another way of doing it that I wanted to illustrate. This is dangerous because if Twitter changes the rate limit, we don't automatically check with the service. I would only advise doing this if you're doing a smaller, quicker, study.
 
@@ -203,7 +203,7 @@ for root in ids:
                 continue
 ```
 
-We also have a `while True` loop that sustains the loop until we collect all of the information we need. Once the `try:` succeeds, we `break` the `while True` loop. When we hit the exception, we `continue` until the `try` succeeds. The try exception clause notifies us when we hit an error by generating a `tweepy.TweepError as e`. When we print e.reason, it gives us the error the API returned. With this code, e.reason would eventually print "rate limit exceeded" as an error because we don't adhere to the rate limit using the rate_limit dictionary for friendships. Try fixing this for yourself.
+We also have a `while True` loop that sustains the loop until we collect all of the information we need. Once the `try:` succeeds, we `break` the `while True` loop. When we hit the exception, we `continue` until the `try` succeeds. The try exception clause notifies us when we hit an error by generating `tweepy.TweepError as e`. When we print e.reason, it gives us the error the API returned. With this code, e.reason would eventually print "rate limit exceeded" as an error because we don't adhere to the rate limit using the rate_limit dictionary for friendships. Try fixing this for yourself.
 
 *Hint: The above solution in the Determining the Objective section of this tutorial would work if altered for the api.show_friendship query.*
 Alternatively, if you just want solution, refer to the github repository at the end of this tutorial for the completed project.
@@ -245,12 +245,14 @@ if(out[0].following):
 
 We only append nodes that are following root, because when we generate our final .csv file, each filled row's cell will correspond with a line between the filled cell's ID and the ID value at column 0. It sounds confusing now, but it'll be a lot simpler when you see it.
 
-Finally, num_mutual is the index for which we will understand connectivity. Nodes with a higher index of connectivity will have a higher centrality than those with less. If a user has no other mutual connections, their centrality value is 0.0. Each user has a variable called num_mutual which recieves += 1 whenever they share a mutual connection. To establish a unit of centrality, I divided num_mutual by the total possible number of mutual connections, len(ids). Thereby, the highest possible unit of centrality is 1.
+Finally, num_mutual is the index for which we will understand connectivity. Nodes with a higher index of connectivity will have a higher centrality than those with less. If a user has no other mutual connections, their centrality value is 0.0. Each user has a variable called num_mutual which recieves += 1 whenever they share a mutual connection. To establish a unit of centrality, I divided num_mutual by the total possible number of mutual connections, which is len(ids). Thereby, the highest possible unit of centrality is 1.
 
 To end the function, I return both centrality_list (a list of every user's unit of centrality) and downtime. Downtime is a value I created to analyize the projects idle time. Whenever we call a time.sleep() we also add the number of seconds the project is asleep to the downtime. This will allow us to tweak the code in order to reduce downtime, and also analyze how much time we have the server running without it being in use. 
 
 The primary function of check_connectivity() is to write a row of each root and the corresponding mutual connections in each column. This is done by `writer.writerow(out_list)` after the `for node in ids:` loop is finished.
 
-This ends the code tutorial for Twitter SNA. The finished code can be found at:
+This ends the code tutorial for Twitter SNA part 1. The finished code can be found at:
 
 https://github.com/Chigg/tweepy_followers/blob/master/tweepy_followers.py 
+
+Stay tuned for part 2, where we will take this information and apply it through visualizations and data analysis.
