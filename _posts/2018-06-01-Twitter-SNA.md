@@ -142,7 +142,7 @@ def get_followers(username):
                 i += 1
                 print("getting followers: %s" %(len(ids)))
 
-                #only collect up to 1000
+                #only collect up to 500
                 if len(ids) >= 500:
                                 break
 
