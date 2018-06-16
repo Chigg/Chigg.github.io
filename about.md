@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 # About Me
-I'm a 23 year old recent graduate from the University of Texas. I'm passionate about improving my programming skills and learning about the impact the technology we use daily has on our society. One day I hope to contribute solutions to many of the worlds problems, but first, I have to get the knack for blogging. 
+I'm a recent graduate from the University of Texas. I'm passionate about improving my programming skills and learning about the impact the technology we use daily has on our society. One day I hope to contribute solutions to many of the worlds problems, but first, I have to expand my toolset. 
 
-I started this blog in order to provide the important contextual background for some of my projects. Context is an important concept in sociology. It gives us the ability to interpret our data. With that said, below I've written a little about my motivations below, in order to provide my perspective for the forthcoming blog posts.
+I started this blog in order to provide the important contextual background for some of my projects. Context is an very necessary concept in sociology. It gives us the ability to interpret our data. With that said; below I've written a little about my motivations in order to provide my perspective for the forthcoming blog posts.
 
 ## Why Sociology and Computer Science?
 	
