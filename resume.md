@@ -7,7 +7,7 @@ permalink: /resume/
 ### The University of Texas at Austin
 May 2018 - *B.A., Sociology • Minor in Computer Science* 
 ### SKILLS
-**Computer:** Python, R, SQL, HTML/CSS, JavaScript, Git, Tableau, Linux, Windows, Microsoft Office Suite, Google G-Suite
+**Computer:** Python, R, SQL, HTML/CSS, JavaScript, Git, Tableau, Linux, Windows, Google G-Suite  
 **Professional:** Teamwork, Analytical Writing, Leadership, Agile
 
 
