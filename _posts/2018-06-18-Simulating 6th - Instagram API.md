@@ -4,7 +4,7 @@ title: Simulating 6th - Instagram API
 featured-img: shane-rounce-205187
 ---
 
-I ultimately decided to scale-up the userlist for the Twitter SNA, so data collection is taking a lot longer than expected. In the interim, I thought it would be fun to explore another API and show how we can use analytics to map data geospatially. Specifically, I provided the GPS coordinates for 6th Street and check local businesses's instagrams.
+I ultimately decided to scale-up the userlist for the Twitter SNA, so data collection is taking a lot longer than expected. In the interim, I thought it would be fun to explore another API and show how we can use analytics to map data geospatially. Specifically, I provided the GPS coordinates for 6th Street to check local businesses's instagrams.
 
 ### Table of Contents
 
@@ -18,9 +18,9 @@ I ultimately decided to scale-up the userlist for the Twitter SNA, so data colle
 <a name="chapter1"></a>
 # What is different? 
 
-Although much of basics remain the same, using the Instagram API is a bit different than Twitter's. For starters, I didn't end up using a library for the Instagram API, so it's a lot more rudimentary. It'll make sense when you see it. There are librarys for Instagram, but the API has undergone a lot of changes since the start of 2018, so some of the library features aren't up-to-date. In this case, I prefer to just forgo the library.
+Although much of basics remain the same, using the Instagram API is a bit different than Twitter's. For starters, I didn't end up using a library for the Instagram API, so it's a lot more rudimentary. It'll make sense when you see it. There are libraries for Instagram, but the API has undergone a lot of changes since the start of 2018, so some of the library features aren't up-to-date. In this case, I prefer to just forgo the library.
 
-Another major difference is Instagram's APP review period. In order to actually access data you have to have an app that is approved, and that serves customers in one or more usecases that've been outlined in the [developer policy.](https://www.instagram.com/developer/review/) Until you get reviewed and approved, your client exists in a "sandbox," which means you can't access public data. You're able to access your own data, plus up to 10 people you invite into your sandbox. But you're only allowed to look at the 20 most recent uploads. This still makes it useful if you're doing personal analysis, or have a small scope, but makes large scale analysis impossible. For instance, you could write a quick script to download 20 of your recent posts, but couldn't look at your entire history.
+Another major difference is Instagram's APP review period. In order to actually access data you have to have an app that is approved. To get approved, it has to serve customers in one or more usecases that've been outlined in the [developer policy.](https://www.instagram.com/developer/review/) Until you get reviewed and approved, your client exists in a "sandbox," which means you can't access public data. You're able to access your own data, plus up to 10 people you invite into your sandbox. But you're only allowed to look at the 20 most recent uploads. This still makes it useful if you're doing personal analysis, or have a small scope, but makes large scale analysis impossible. For instance, you could write a quick script to download 20 of your recent posts, but couldn't look at your entire history.
 
 For this project I wanted to input a GPS coordinate and find nearby businesses to determine which had a higher average of likes.
 
@@ -109,7 +109,7 @@ if out_data['meta']['code'] == 200:
                     	product.append(temp)
 ```
 
-As you can tell, since I looked at the documentation, I know the output is going to be formated as ['data'][i][*(value)*] so I'm pulling that and assigning it to a variable according to what it is. I'm storing the data in a list of lists, so temp is of variables for this iteration, and product is the complete output that gets returned.
+As you can tell, since I looked at the documentation, I know the output is going to be formated as ['data'][i][*(value)*] so I'm pulling that and assigning it to a variable according to what it is. I'm storing the data in a list of lists, so temp is only for variables for this iteration, and product is the complete output that gets returned.
 
 In the sandbox, this returns 20 locations corresponding to the GPS coordinates, the name, and the ID that instagram associates with that location.
 
@@ -158,9 +158,9 @@ This is an example output from QGIS using GE Satellite imagery. As you can see, 
 
 # What's next?
 
-Well, considering the likes data is simulated, the next natural steps for this project would be to flesh it out as an app and get it approved. Furthermore, there are no controls for adhereing to Instagram's ratelimit. The API doesn't provide a way to check for rate limit, and it seems as if Instagram has undergone a lot of changes recently regarding how many queries they are actually allowing developers. 
+Well, considering the likes data is simulated, the next natural steps for this project would be to flesh it out as an app and get it approved. Furthermore, there are no controls for adhereing to Instagram's ratelimit. The API doesn't provide a way to check for rate limit, and it seems as if Instagram has undergone a lot of changes recently regarding how many queries they are actually allowing developers. There's a lot of misinformation currently about how many queries there are. 
 
-One way to do that would be creating a counter based on whatever instagram's rate limit actually is. `out_data = requests.get(request_url).json()` and the equivalent code for each of the other types of queries would need to be gated according to a global counter. You'd run into the same problems as discussed in [Twitter - Social Network Analysis 1](https://chigg.github.io/Twitter-SNA/). Ultimately, you wouldn't be able to detect API ratelimit changes dynamically, which means if the ratelimit changed, you'd need to alter the counter manually.
+One way to adhere to the ratelimit would be creating a counter based on whatever instagram's rate limit actually is. `out_data = requests.get(request_url).json()` and the equivalent code for each of the other types of queries would need to be gated according to a global counter. You'd run into the same problems as discussed in [Twitter - Social Network Analysis 1](https://chigg.github.io/Twitter-SNA/). Ultimately, you wouldn't be able to detect API ratelimit changes dynamically, which means if the ratelimit changed, you'd need to alter the counter manually.
 
 Considering the scope of this project, however, I don't think it's really necessary. We don't really query that much at all during data collection while looking for locations, and we don't query at all when getting average likes.
 
