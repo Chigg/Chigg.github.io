@@ -255,6 +255,6 @@ The primary function of check_connectivity() is to write a row of each root and 
 
 This ends the code tutorial for Twitter SNA part 1. The finished code can be found at:
 
-https://github.com/Chigg/tweepy_followers/blob/master/tweepy_followers.py 
+<https://github.com/Chigg/tweepy_followers/blob/master/tweepy_followers.py>
 
 Stay tuned for part 2, where we will take this information and apply it through visualizations and data analysis.
