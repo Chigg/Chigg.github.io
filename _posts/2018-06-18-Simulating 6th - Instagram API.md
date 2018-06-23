@@ -14,6 +14,7 @@ I ultimately decided to scale-up the userlist for the Twitter SNA, so data colle
 3. [Connecting to the API](#chapter3)
 4. [Collecting Data](#chapter4)
 5. [Analysis](#chapter5)
+6. [What's next?](#chapter6)
 
 <a name="chapter1"></a>
 # What is different? 
@@ -122,7 +123,6 @@ Every other query is pretty much formatted the same, and you can refer to the so
 Importing data into QGIS is pretty straightforward, and there are plenty of tutorials that will have more indepth explanations than I can provide. Since I'm not an expert, I'll refer you to <http://all-geo.org/volcan01010/2014/10/easily-plot-data-on-a-google-maps-background-with-the-qgis-openlayers-plugin/> if you want to learn more about the software. 
 
 One thing that that tutorial doesn't mention is the CRS you'll want to give your data in order for it to line up with the Google Earth basemap. WGS84 - EPSG:4326 works correctly with the default CRS that the basemap has. That's pretty much standard, but for someone new to GIS software, it'll save you a lot of time to know that. Trust me.
-
 <html>
  <head>
   <style>
@@ -132,7 +132,7 @@ One thing that that tutorial doesn't mention is the CRS you'll want to give your
   }
   .imgbox {
    display: grid;
-   height: 50%;
+   height: 12%;
    transition: transform .2s;
   }
   .center-fit {
@@ -151,6 +151,7 @@ One thing that that tutorial doesn't mention is the CRS you'll want to give your
   </div>
  </body>
 </html>
+
 
 This is an example output from QGIS using GE Satellite imagery. As you can see, naturally, the Gates-Dell Complex is popping for instagram pics. This was really just coincidental, as the way it's simulated is more or less just rolling a dice. The red marked areas are locations with the highest average of likes. I filtered the data to ignore about 80% of the locations, so that we could only see the highest. Another interesting way to visualize this data might be to generate a heat map. There is a fairly popular heatmap plugin for QGIS which I've seen a lot of people use. However, I didn't think I had enough "data" to warrant the effort.
 
