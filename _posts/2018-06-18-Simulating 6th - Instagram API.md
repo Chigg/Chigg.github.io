@@ -132,7 +132,8 @@ One thing that that tutorial doesn't mention is the CRS you'll want to give your
   }
   .imgbox {
    display: grid;
-   height: 12%;
+   height: inherit;
+   width: inherit;
    transition: transform .2s;
   }
   .center-fit {
