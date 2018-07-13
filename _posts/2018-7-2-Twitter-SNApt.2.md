@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Twitter - Social Network Analysis 2
-featured-img: shane-rounce-205187
+featured-img: 9.1
 ---
 
 ### Table of Contents
