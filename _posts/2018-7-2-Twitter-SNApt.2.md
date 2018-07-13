@@ -29,7 +29,7 @@ I used gephi to visualize the data. There were 5 graphs I excluded because they 
 
 {% include gallery.html %}
 
-As you can tell, in general, mutuality is fairly low for each instances. I hypothesize that mutuality is low for bots in general, due to the nature in which their relationships form. Although all of the graphs are not confirmed bots, the list is allegedly based on accounts who auto-retweet. 
+As you can tell, in general, mutuality is fairly low for each instance. I hypothesize that mutuality is low for bots in general, due to the nature in which their relationships form. Although all of the graphs are not confirmed bots, the list is allegedly based on accounts who auto-retweet. 
 
 Often times, you can notice niches with accounts who have very little mutuality. In one notable instance (MUDERBYGOV's graph), the two connected auxiliary nodes were the same person based on profile bio and geo location. The geographic location matched the central node as well. It would be interesting to find out how often this is the case. That presents novel information, since there are no other ways to determine connected accounts.
 
